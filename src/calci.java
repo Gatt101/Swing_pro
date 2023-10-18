@@ -422,7 +422,7 @@ public class calci  {
 		frmCalculator.getContentPane().add(BTE);
 		
 		JButton back = new JButton("");
-		back.setIcon(new ImageIcon("C:\\Users\\GAURAV\\Downloads\\arrow.png"));
+		
 		back.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		back.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -435,7 +435,8 @@ public class calci  {
 			}
 		});
 		back.setBounds(10, 10, 66, 41);
-		frmCalculator.getContentPane().add(back);
+		back.setIcon(new ImageIcon("C:\\Users\\GAURAV\\Downloads\\arrow.png"));
+                frmCalculator.getContentPane().add(back);
 		
 		JButton btnNewButton_3_1 = new JButton("log");
 		btnNewButton_3_1.addActionListener(new ActionListener() {
